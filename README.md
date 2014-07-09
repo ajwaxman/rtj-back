@@ -1,12 +1,14 @@
-## README
+# Rule The Jungle (Backend)
 
-This is the README for the BackEnd portion of the RTJ application.
+This is the README for the BackEnd portion of the Rule The Jungle application.
 
-### Initial Setup
+## Initial Setup
 
-Before cloning this repository, please run the following in Terminal:
+In order to setup the RTJ application locally, we must setup our enironment.
 
----
+### RVM (Ruby) and Ruby Gem Updates
+
+Please run the following in Terminal:
 
 *rvm get stable*  
 *rvm reload*  
@@ -25,4 +27,28 @@ Before cloning this repository, please run the following in Terminal:
 
 *gem update rails*
 
----
+**NOTE** - replace *update* with *install* if you don't have ruby gem installed.
+
+### PostgreSQL Installation
+
+Ensure that PostgreSQL is installed locally:
+
+*brew install postgresql*  
+
+Also install the **[PostgreSQL Desktop Application](http://postgresapp.com/)**.  
+Have this running locally while developing.
+
+### Rails Project Setup
+
+Once terminal commands are run, clone the repository:
+
+*git clone git@github.com:CarlosPlusPlus/rtj-back.git*
+
+With your local PostgreSQL server up, run the following commands to initialize Rails environment:
+
+*bundle install*  
+*rake db:create db:migrate*  
+*rails s*  
+
+Now, navigate to *localhost:3000* and you should see **Hello World!**
+
