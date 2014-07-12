@@ -21,3 +21,7 @@ group :development, :test do
   gem 'factory_girl_rails'      # https://github.com/thoughtbot/factory_girl_rails
   gem 'rspec-rails', '~> 3.0.0' # https://github.com/rspec/rspec-rails
 end
+
+group :production do
+  gem 'rails_12factor'
+end
