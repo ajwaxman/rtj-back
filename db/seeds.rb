@@ -1,6 +1,7 @@
-# Seed Information for: Plan
-Plan.destroy_all
+# Clean out Database Tables (reset ids)
+DatabaseCleaner.clean_with(:truncation)
 
+# Seed Information for: Plan
 plan1 = Plan.create(
   name:            'Dinner and a Movie',
   main_event_type: 'Activity',

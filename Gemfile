@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby   '2.1.1'
 
 gem 'annotate'
-gem 'figaro'
+gem 'figaro'                    # https://github.com/laserlemon/figaro
 gem 'jbuilder', '~> 2.0'        # https://github.com/rails/jbuilder
 gem 'jquery-rails'
 gem 'pg'
@@ -21,6 +21,8 @@ group :development, :test do
   gem 'capybara'                # https://github.com/jnicklas/capybara
   gem 'factory_girl_rails'      # https://github.com/thoughtbot/factory_girl_rails
   gem 'rspec-rails', '~> 3.0.0' # https://github.com/rspec/rspec-rails
+
+  gem 'database_cleaner'        # https://github.com/DatabaseCleaner/database_cleaner
 end
 
 group :production do

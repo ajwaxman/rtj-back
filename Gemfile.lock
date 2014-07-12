@@ -55,6 +55,7 @@ GEM
     columnize (0.8.9)
     coolline (0.4.3)
     daemon_controller (1.2.0)
+    database_cleaner (1.2.0)
     debug_inspector (0.0.2)
     debugger (1.6.7)
       columnize (>= 0.3.1)
@@ -221,6 +222,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   capybara
+  database_cleaner
   factory_girl_rails
   figaro
   jazz_hands
