@@ -1,1 +1,2 @@
-SECRET_KEY_BASE: <rake secret>
+NEW_RELIC_LICENSE_KEY: <new relic api key>
+SECRET_KEY_BASE:       <rake secret>
