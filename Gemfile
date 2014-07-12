@@ -11,8 +11,7 @@ gem 'rails', '4.1.4'
 gem 'sass-rails', '~> 4.0.3'
 gem 'turbolinks'                # https://github.com/rails/turbolink
 gem 'uglifier', '>= 1.3.0'
-gem 'unicorn'                   # https://github.com/defunkt/unicorn
-gem 'unicorn-rails'             # https://github.com/samuelkadolph/unicorn-rails
+
 
 group :development, :test do
   gem 'better_errors'           # https://github.com/charliesome/better_errors
@@ -25,5 +24,6 @@ group :development, :test do
 end
 
 group :production do
+  gem 'passenger'               # https://github.com/phusion/passenger-ruby-heroku-demo
   gem 'rails_12factor'
 end
