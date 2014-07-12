@@ -6,6 +6,7 @@ gem 'figaro'
 gem 'jbuilder', '~> 2.0'        # https://github.com/rails/jbuilder
 gem 'jquery-rails'
 gem 'pg'
+gem 'newrelic_rpm'
 gem 'rails', '4.1.4'
 gem 'sass-rails', '~> 4.0.3'
 gem 'turbolinks'                # https://github.com/rails/turbolink
