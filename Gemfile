@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby   '2.1.1'
 
 gem 'annotate'
+gem 'figaro'
 gem 'jbuilder', '~> 2.0'        # https://github.com/rails/jbuilder
 gem 'jquery-rails'
 gem 'pg'
