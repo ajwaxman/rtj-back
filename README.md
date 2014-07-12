@@ -47,8 +47,15 @@ Once terminal commands are run, clone the repository:
 With your local PostgreSQL server up, run the following commands to initialize Rails environment:
 
 *bundle install*  
-*rake db:create db:migrate db:test:prepare*  
-*rails s*  
+*gem install foreman*  
+*rake db:create db:migrate*  
+*rake RAILS_ENV=test db:create db:migrate* 
 
-Now, navigate to *localhost:3000* and you should see **Hello World!**
+*touch .env*  
+*echo "RACK_ENV=development" >> .env*  
+*echo "PORT=3000" >> .env*  
+*foreman start*  
+
+Now, navigate to *localhost:3000* and you should see:  
+**Hello World! ==> From RTJ-BackEnd.**
 
