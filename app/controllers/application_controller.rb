@@ -25,11 +25,11 @@ class ApplicationController < ActionController::Base
 
   # Based on Rails.env, allow specific front-end to post.
   def cors_origin
-    case Rails.env
-    when 'development'
-      ENV['CROSS_DOMAIN_DEV']
-    when 'production'
-      ENV['CROSS_DOMAIN_PROD']
-    end
+    @origin ||= case Rails.env
+      when 'development'
+        ENV['CROSS_DOMAIN_DEV']
+      when 'production'
+        ENV['CROSS_DOMAIN_PROD']
+      end
   end
 end
