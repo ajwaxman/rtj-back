@@ -1,3 +1,4 @@
-CROSS_DOMAIN_LIST:     <url list in CSV format>
+CROSS_DOMAIN_DEV:  <local dev domain>
+CROSS_DOMAIN_PROD: <prod domain>
 NEW_RELIC_LICENSE_KEY: <new relic api key>
 SECRET_KEY_BASE:       <rake secret>
