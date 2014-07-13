@@ -1,2 +1,3 @@
+CROSS_DOMAIN_LIST:     <url list in CSV format>
 NEW_RELIC_LICENSE_KEY: <new relic api key>
 SECRET_KEY_BASE:       <rake secret>
