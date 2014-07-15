@@ -12,6 +12,9 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'turbolinks'                # https://github.com/rails/turbolink
 gem 'uglifier', '>= 1.3.0'
 
+group :development do
+  gem 'bullet'                  # https://github.com/flyerhzm/bullet
+end
 
 group :development, :test do
   gem 'better_errors'           # https://github.com/charliesome/better_errors

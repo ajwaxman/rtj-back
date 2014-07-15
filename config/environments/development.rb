@@ -34,4 +34,12 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Load configuration for Bullet gem.
+  config.after_initialize do
+    Bullet.enable        = true # Enable Bullet gem.
+    Bullet.alert         = true # JavaScript alert in Browser.
+    Bullet.bullet_logger = true # Log output => log/bullet.log
+    Bullet.console       = true # Enable bullet statements in console.
+  end
 end
