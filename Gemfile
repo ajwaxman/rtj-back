@@ -21,11 +21,15 @@ group :development, :test do
   gem 'binding_of_caller'       # https://github.com/banister/binding_of_caller
   gem 'jazz_hands'              # https://github.com/nixme/jazz_hands
 
-  gem 'capybara'                # https://github.com/jnicklas/capybara
+  gem 'capybara' , '~> 2.4.0'   # https://github.com/jnicklas/capybara
   gem 'factory_girl_rails'      # https://github.com/thoughtbot/factory_girl_rails
   gem 'rspec-rails', '~> 3.0.0' # https://github.com/rspec/rspec-rails
 
   gem 'database_cleaner'        # https://github.com/DatabaseCleaner/database_cleaner
+end
+
+group :test do
+  gem 'simplecov', :require => false
 end
 
 group :production do
