@@ -9,6 +9,7 @@
 #  cost            :integer
 #  created_at      :datetime
 #  updated_at      :datetime
+#  date_request_id :integer
 #
 
 require 'rails_helper'
