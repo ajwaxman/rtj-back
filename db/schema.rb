@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140712001929) do
+ActiveRecord::Schema.define(version: 20140727150215) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "date_requests", force: true do |t|
+    t.string   "location"
+    t.integer  "relationship_status"
+    t.integer  "spender"
+    t.integer  "main_event"
+    t.date     "event_date"
+    t.time     "event_time"
+    t.boolean  "email_sent",          default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "plans", force: true do |t|
     t.string   "name"
